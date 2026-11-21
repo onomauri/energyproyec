@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Cliente {
+  id        Int        @id @default(autoincrement())
+  nombre    String
+  email     String     @unique
+  password  String
+  driveFolderId String?
+  ultimaConexion DateTime?
+  proyectos Proyecto[]
+  creadoEn  DateTime   @default(now())
+}
+
+model Proyecto {
+  id               Int                 @id @default(autoincrement())
+  titulo           String
+  estado           String              @default("En ejecución")
+  ubicacion        String
+  alcance          String
+  porcentajeAvance Int                 @default(0)
+  fasesCompletadas Int                 @default(0)
+  totalFases       Int                 @default(5)
+  fechaInicio      DateTime
+  fechaEstimadaFin DateTime
+  imagenPrincipal  String?
+  clienteId        Int
+  cliente          Cliente             @relation(fields: [clienteId], references: [id])
+  actualizaciones  Actualizacion[]
+  fotos            FotoProyecto[]
+  documentos       DocumentoProyecto[]
+}
+
+model Actualizacion {
+  id         Int      @id @default(autoincrement())
+  fecha      DateTime @default(now())
+  titulo     String
+  proyectoId Int
+  proyecto   Proyecto @relation(fields: [proyectoId], references: [id])
+}
+
+model FotoProyecto {
+  id         Int      @id @default(autoincrement())
+  url        String
+  titulo     String?
+  proyectoId Int
+  proyecto   Proyecto @relation(fields: [proyectoId], references: [id])
+}
+
+model DocumentoProyecto {
+  id         Int      @id @default(autoincrement())
+  url        String
+  nombre     String
+  proyectoId Int
+  proyecto   Proyecto @relation(fields: [proyectoId], references: [id])
+  creadoEn   DateTime @default(now())
+}
+
+model Cotizacion {
+  id          Int      @id @default(autoincrement())
+  nombre      String
+  empresa     String?
+  telefono    String
+  email       String
+  servicio    String
+  descripcion String
+  estado      String   @default("Pendiente")
+  creadoEn    DateTime @default(now())
+}
+
+model User {
+  id            String   @id @default(cuid())
+  name          String
+  email         String   @unique
+  password      String
+  role          String   @default("CLIENT")
+  driveFolderId String?
+  ultimaConexion DateTime?
+  createdAt     DateTime @default(now())
+}
+
