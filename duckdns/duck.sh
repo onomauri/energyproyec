@@ -1,1 +1,0 @@
-echo url="https://www.duckdns.org/update?domains=electrocaribe&token=3bf866c4-9995-4264-b95e-0575d5f883c3" | curl -k -o ~/duckdns/duck.log -K -
