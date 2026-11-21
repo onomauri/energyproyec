@@ -1,0 +1,21 @@
+{
+  "name": "ubuntu",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "contract:emit": "prisma contract emit"
+  },
+  "dependencies": {
+    "@prisma/orm-postgres": "^8.0.0-rc.23",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.10",
+    "googleapis": "^178.0.0"
+  },
+  "devDependencies": {
+    "@prisma/cli-engine": "^0.9.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^26.6.6",
+    "prisma": "^8.0.0-rc.33"
+  }
+}
