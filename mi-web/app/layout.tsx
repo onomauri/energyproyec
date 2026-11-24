@@ -14,17 +14,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "ElectroCaribe Ingeniería Eléctrica | Subestaciones y Media Tensión",
-    template: "%s | ElectroCaribe Ingeniería Eléctrica",
+    default: "EnergyProyec Ingeniería Eléctrica | Subestaciones y Media Tensión",
+    template: "%s | EnergyProyec Ingeniería Eléctrica",
   },
   description:
     "Diseño, montaje y mantenimiento de subestaciones eléctricas, redes de media y baja tensión, termografía y soluciones energéticas industriales en Barranquilla y la Región Caribe.",
   openGraph: {
-    title: "ElectroCaribe Ingeniería Eléctrica",
+    title: "EnergyProyec Ingeniería Eléctrica",
     description:
       "Soluciones integrales en ingeniería eléctrica industrial, mantenimiento de subestaciones hasta 34.5 kV y seguimiento de obra en línea.",
     url: "https://duckdns.org",
-    siteName: "ElectroCaribe Ingeniería Eléctrica",
+    siteName: "EnergyProyec Ingeniería Eléctrica",
     locale: "es_CO",
     type: "website",
   },

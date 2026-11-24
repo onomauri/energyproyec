@@ -48,7 +48,7 @@ export default function HomePage() {
               Supervisa tu proyecto en vivo desde nuestro <span className="text-red-500">Portal de Clientes</span>
             </h2>
             <p className="text-slate-300 text-base leading-relaxed">
-              Eliminamos la incertidumbre en la ejecución de obras. Cada cliente de ElectroCaribe recibe credenciales privadas para auditar el progreso de su proyecto desde cualquier lugar.
+              Eliminamos la incertidumbre en la ejecución de obras. Cada cliente de EnergyProyec recibe credenciales privadas para auditar el progreso de su proyecto desde cualquier lugar.
             </p>
             <ul className="space-y-3 text-sm text-slate-300">
               <li className="flex items-center gap-3">
@@ -81,7 +81,7 @@ export default function HomePage() {
                 <span className="w-3 h-3 rounded-full bg-amber-400" />
                 <span className="w-3 h-3 rounded-full bg-emerald-500" />
               </div>
-              <span className="text-xs text-slate-400 font-mono">electrocaribe.duckdns.org/clientes</span>
+              <span className="text-xs text-slate-400 font-mono">energyproyec.com/clientes</span>
             </div>
 
             <div className="space-y-3">

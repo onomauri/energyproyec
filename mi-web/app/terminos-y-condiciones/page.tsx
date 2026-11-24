@@ -11,7 +11,7 @@ export default function TerminosYCondicionesPage() {
           <Link href="/" className="flex items-center gap-2.5">
             <Isotipo className="h-10 w-auto" />
             <span className="font-extrabold tracking-tight text-sm sm:text-base">
-              ELECTRO<span className="text-red-500">CARIBE</span>
+              ENERGY<span className="text-red-500">PROYEC</span>
             </span>
           </Link>
 
@@ -44,7 +44,7 @@ export default function TerminosYCondicionesPage() {
               <ShieldCheck className="w-4 h-4 text-red-600" /> 1. Aceptación y Objeto del Portal
             </h2>
             <p>
-              El acceso y uso del Portal de Clientes de <strong>ELECTROCARIBE INGENIERÍA ELÉCTRICA S.A.S.</strong> (en adelante, &ldquo;ElectroCaribe&rdquo;) atribuye la condición de Usuario Autorizado e implica la aceptación plena y sin reservas de los presentes Términos y Condiciones. Este portal está destinado exclusivamente a clientes corporativos, contratistas e interventores autorizados para el seguimiento técnico, documental y fotográfico de proyectos eléctricos en ejecución.
+              El acceso y uso del Portal de Clientes de <strong>ENERGYPROYEC</strong> (en adelante, &ldquo;EnergyProyec&rdquo;) atribuye la condición de Usuario Autorizado e implica la aceptación plena y sin reservas de los presentes Términos y Condiciones. Este portal está destinado exclusivamente a clientes corporativos, contratistas e interventores autorizados para el seguimiento técnico, documental y fotográfico de proyectos eléctricos en ejecución.
             </p>
           </section>
 
@@ -53,14 +53,14 @@ export default function TerminosYCondicionesPage() {
               <FileText className="w-4 h-4 text-red-600" /> 2. Política de Tratamiento de Datos Personales (Ley 1581 de 2012)
             </h2>
             <p>
-              En cumplimiento de la <strong>Ley Estatutaria 1581 de 2012</strong>, el <strong>Decreto Reglamentario 1377 de 2013</strong> y demás normas concordantes de la República de Colombia sobre protección de datos personales (Habeas Data), ElectroCaribe actúa como Responsable del Tratamiento de los datos suministrados por los titulares (nombres, correos corporativos, teléfonos de contacto y registros técnicos de acceso).
+              En cumplimiento de la <strong>Ley Estatutaria 1581 de 2012</strong>, el <strong>Decreto Reglamentario 1377 de 2013</strong> y demás normas concordantes de la República de Colombia sobre protección de datos personales (Habeas Data), EnergyProyec actúa como Responsable del Tratamiento de los datos suministrados por los titulares (nombres, correos corporativos, teléfonos de contacto y registros técnicos de acceso).
             </p>
             <ul className="list-disc pl-5 space-y-1.5">
               <li>
                 <strong>Finalidades:</strong> Gestionar la relación contractual y comercial, habilitar credenciales de acceso seguro, informar avances de obra, entregar documentación técnica y prestar soporte de ingeniería.
               </li>
               <li>
-                <strong>Derechos del Titular (Art. 8, Ley 1581 de 2012):</strong> El titular tiene derecho a conocer, actualizar, rectificar y solicitar la supresión de sus datos personales, así como a revocar la autorización otorgada cuando no exista un deber legal o contractual que lo impida, escribiendo al correo <strong>ingenieria@electrocaribe.com</strong>.
+                <strong>Derechos del Titular (Art. 8, Ley 1581 de 2012):</strong> El titular tiene derecho a conocer, actualizar, rectificar y solicitar la supresión de sus datos personales, así como a revocar la autorización otorgada cuando no exista un deber legal o contractual que lo impida, escribiendo al correo <strong>ingenieria@energyproyec.com</strong>.
               </li>
             </ul>
           </section>
@@ -90,7 +90,7 @@ export default function TerminosYCondicionesPage() {
                 <strong>Carácter Informativo del Avance:</strong> Los indicadores porcentuales, cronogramas estimados y registros fotográficos mostrados en el portal tienen carácter informativo y de seguimiento operativo. Para efectos legales, financieros o de liquidación contractual prevalecerán las actas físicas o digitales debidamente suscritas por las partes.
               </li>
               <li>
-                <strong>Disponibilidad del Servicio:</strong> ElectroCaribe implementa medidas técnicas de cifrado y control de acceso para proteger la integridad de los archivos; no obstante, no garantiza la disponibilidad ininterrumpida del portal ante mantenimientos programados, fallas de telecomunicaciones o eventos de fuerza mayor atribuibles a terceros proveedores de infraestructura en la nube.
+                <strong>Disponibilidad del Servicio:</strong> EnergyProyec implementa medidas técnicas de cifrado y control de acceso para proteger la integridad de los archivos; no obstante, no garantiza la disponibilidad ininterrumpida del portal ante mantenimientos programados, fallas de telecomunicaciones o eventos de fuerza mayor atribuibles a terceros proveedores de infraestructura en la nube.
               </li>
             </ul>
           </section>
@@ -98,7 +98,7 @@ export default function TerminosYCondicionesPage() {
           <section className="space-y-2.5 text-sm leading-relaxed text-slate-600 pt-2 border-t border-slate-100">
             <h2 className="text-base font-bold text-slate-900">5. Legislación Aplicable y Contacto</h2>
             <p>
-              Estos términos se rigen íntegramente por las leyes de la República de Colombia. Para consultas, peticiones o reclamos relacionados con el portal o el tratamiento de datos personales, puede comunicarse con nuestra área de ingeniería y cumplimiento en <strong>Barranquilla, Atlántico</strong>, al correo <strong>ingenieria@electrocaribe.com</strong>.
+              Estos términos se rigen íntegramente por las leyes de la República de Colombia. Para consultas, peticiones o reclamos relacionados con el portal o el tratamiento de datos personales, puede comunicarse con nuestra área de ingeniería y cumplimiento en <strong>Barranquilla, Atlántico</strong>, al correo <strong>ingenieria@energyproyec.com</strong>.
             </p>
           </section>
         </div>

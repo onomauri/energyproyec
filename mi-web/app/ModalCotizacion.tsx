@@ -66,7 +66,7 @@ export function ModalCotizacion({
               <div className="bg-[#0B192C] text-white px-6 py-4 flex items-center justify-between">
                 <div>
                   <h3 className="font-bold text-lg">Solicitar Cotización Técnica</h3>
-                  <p className="text-xs text-slate-400">Un ingeniero de ElectroCaribe te contactará pronto</p>
+                  <p className="text-xs text-slate-400">Un ingeniero de EnergyProyec te contactará pronto</p>
                 </div>
                 <button
                   type="button"

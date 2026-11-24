@@ -20,7 +20,7 @@ export default function ClientesLoginPage() {
             <Isotipo className="h-28 w-auto" />
           </div>
           <h1 className="text-2xl font-bold tracking-tight pt-2">
-            Portal de Clientes <span className="text-red-500">ElectroCaribe</span>
+            Portal de Clientes <span className="text-red-500">EnergyProyec</span>
           </h1>
           <p className="text-slate-400 text-sm">
             Ingresa tus credenciales para consultar el avance de tus proyectos eléctricos.
@@ -43,7 +43,7 @@ export default function ClientesLoginPage() {
                 type="email"
                 name="email"
                 required
-                placeholder="cliente@industriascaribe.com"
+                placeholder="correo@empresa.com"
                 className="w-full bg-slate-950 border border-slate-800 focus:border-red-500 rounded-lg pl-10 pr-4 py-2.5 text-sm text-white outline-none transition"
               />
             </div>

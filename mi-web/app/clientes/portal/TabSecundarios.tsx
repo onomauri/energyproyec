@@ -98,7 +98,7 @@ export function TabSoporte() {
           <div className="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center"><Mail className="w-5 h-5" /></div>
           <h3 className="font-bold text-base">Mesa de Ingeniería y Proyectos</h3>
           <p className="text-sm text-slate-600">Envío de solicitudes técnicas, planos o mantenimientos.</p>
-          <p className="text-sm font-bold text-[#0B192C]">ingenieria@electrocaribe.com</p>
+          <p className="text-sm font-bold text-[#0B192C]">ingenieria@energyproyec.com</p>
         </div>
       </div>
     </div>

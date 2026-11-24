@@ -26,7 +26,7 @@ export default async function AdminPage() {
             <div className="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center mx-auto">
               <Shield className="w-6 h-6 text-white" />
             </div>
-            <h1 className="text-xl font-bold">Administración ElectroCaribe</h1>
+            <h1 className="text-xl font-bold">Administración EnergyProyec</h1>
             <p className="text-xs text-slate-400">Ingresa la clave maestra de ingeniería</p>
           </div>
 
@@ -116,7 +116,7 @@ export default async function AdminPage() {
             <Isotipo className="h-12 w-auto" />
             <div>
               <span className="font-bold tracking-tight block leading-none">
-                ELECTRO<span className="text-red-500">CARIBE</span> • ADMIN
+                ENERGY<span className="text-red-500">PROYEC</span> • ADMIN
               </span>
               <span className="text-[11px] text-slate-400">Control de Obras y Clientes</span>
             </div>

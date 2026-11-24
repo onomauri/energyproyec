@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const doc = new PDFDocument({ size: "LETTER", margin: 50 });
-const outputPath = path.join(process.cwd(), "public", "Documentacion_Tecnica_ElectroCaribe.pdf");
+const outputPath = path.join(process.cwd(), "Documentacion_Tecnica_EnergyProyec.pdf");
 doc.pipe(fs.createWriteStream(outputPath));
 
 const NAVY = "#0B192C";
@@ -35,7 +35,7 @@ function bullet(label, text) {
 
 // PÁGINA 1: ARQUITECTURA Y MAPA DEL PROYECTO
 headerBanner(
-  "ELECTROCARIBE INGENIERÍA ELÉCTRICA",
+  "ENERGYPROYEC INGENIERÍA ELÉCTRICA",
   "Documento Técnico de Arquitectura, Operación y Guía de Demostración • Noviembre 2026"
 );
 

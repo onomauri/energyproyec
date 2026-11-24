@@ -71,7 +71,7 @@ export function PortalClienteView({
           <div className="p-6 border-b border-slate-800 flex items-center gap-3">
             <Isotipo className="h-12 w-auto" />
             <div>
-              <span className="font-bold tracking-tight block leading-none">ELECTRO<span className="text-red-500">CARIBE</span></span>
+              <span className="font-bold tracking-tight block leading-none">ENERGY<span className="text-red-500">PROYEC</span></span>
               <span className="text-[10px] text-slate-400 uppercase tracking-wider">Portal Clientes</span>
             </div>
           </div>

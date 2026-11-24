@@ -156,7 +156,7 @@ export function BuzonCotizaciones({
           {filtradas.map((cot) => {
             const prioridad = obtenerPrioridad(cot.servicio, cot.descripcion);
             const telLimpio = cot.telefono.replace(/\D/g, "");
-            const whatsappUrl = "https://" + "wa.me/" + `${telLimpio.startsWith("57") ? telLimpio : `57${telLimpio}`}?text=${encodeURIComponent(`Hola ${cot.nombre}, te saludamos de ElectroCaribe respecto a ${cot.servicio}.`)}`;
+            const whatsappUrl = "https://" + "wa.me/" + `${telLimpio.startsWith("57") ? telLimpio : `57${telLimpio}`}?text=${encodeURIComponent(`Hola ${cot.nombre}, te saludamos de EnergyProyec respecto a ${cot.servicio}.`)}`;
 
             return (
               <div key={cot.id} className="p-5 hover:bg-slate-50/70 transition space-y-3">
