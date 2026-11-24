@@ -2,7 +2,8 @@
 
 import { useActionState } from "react";
 import Link from "next/link";
-import { Zap, Lock, Mail, ArrowLeft, AlertCircle } from "lucide-react";
+import { Lock, Mail, ArrowLeft, AlertCircle } from "lucide-react";
+import Isotipo from "@/components/Isotipo";
 import { loginCliente } from "./actions";
 
 export default function ClientesLoginPage() {
@@ -16,9 +17,7 @@ export default function ClientesLoginPage() {
             <ArrowLeft className="w-4 h-4" /> Volver al inicio
           </Link>
           <div className="flex justify-center">
-            <div className="bg-red-600 p-3 rounded-xl shadow-lg shadow-red-600/20">
-              <Zap className="w-8 h-8 text-white" />
-            </div>
+            <Isotipo className="h-28 w-auto" />
           </div>
           <h1 className="text-2xl font-bold tracking-tight pt-2">
             Portal de Clientes <span className="text-red-500">ElectroCaribe</span>

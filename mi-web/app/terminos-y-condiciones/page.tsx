@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Zap, ShieldCheck, ArrowLeft, FileText, Lock, Scale } from "lucide-react";
+import { ShieldCheck, ArrowLeft, FileText, Lock, Scale } from "lucide-react";
+import Isotipo from "@/components/Isotipo";
 
 export default function TerminosYCondicionesPage() {
   return (
@@ -8,9 +9,7 @@ export default function TerminosYCondicionesPage() {
       <header className="bg-[#0B192C] text-white border-b border-slate-800 sticky top-0 z-30">
         <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="bg-red-600 p-1.5 rounded-lg">
-              <Zap className="w-4 h-4 text-white" />
-            </div>
+            <Isotipo className="h-10 w-auto" />
             <span className="font-extrabold tracking-tight text-sm sm:text-base">
               ELECTRO<span className="text-red-500">CARIBE</span>
             </span>

@@ -5,7 +5,13 @@ import { createPortal } from "react-dom";
 import { enviarCotizacion } from "./cotizacion-actions";
 import { X, Send, CheckCircle2, AlertCircle } from "lucide-react";
 
-export function ModalCotizacion({ textoBoton = "Solicitar Cotización" }: { textoBoton?: string }) {
+export function ModalCotizacion({
+  textoBoton = "Solicitar Cotización",
+  variante = "solido",
+}: {
+  textoBoton?: string;
+  variante?: "solido" | "contorno" | "contornoOscuro" | "navegacion";
+}) {
   const [abierto, setAbierto] = useState(false);
   const [montado, setMontado] = useState(false);
   const [state, formAction, isPending] = useActionState(enviarCotizacion, null);
@@ -33,7 +39,15 @@ export function ModalCotizacion({ textoBoton = "Solicitar Cotización" }: { text
       <button
         type="button"
         onClick={() => setAbierto(true)}
-        className="bg-red-600 hover:bg-red-700 active:scale-95 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl transition transform shadow-lg shadow-red-600/25 cursor-pointer"
+        className={`active:scale-95 text-xs sm:text-sm font-semibold px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl transition transform cursor-pointer whitespace-nowrap ${
+          variante === "navegacion"
+            ? "bg-transparent text-(color:--nav-fg-hover) border border-(color:--nav-border) hover:bg-(color:--nav-hover-bg)"
+          : variante === "contorno"
+            ? "bg-transparent text-slate-700 border border-slate-300 hover:border-slate-400 hover:bg-slate-100 hover:text-slate-900"
+            : variante === "contornoOscuro"
+              ? "bg-transparent text-slate-200 border border-slate-500/70 hover:border-slate-300 hover:bg-white/5 hover:text-white"
+              : "bg-red-600 hover:bg-red-700 text-white shadow-lg shadow-red-600/25"
+        }`}
       >
         {textoBoton}
       </button>

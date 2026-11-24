@@ -11,6 +11,9 @@ export async function GET() {
 
     const logos = files
       .filter((f) => /\.(png|jpe?g|svg|webp)$/i.test(f))
+      // Ignorar duplicados ("- copia") y el logo propio de la empresa
+      .filter((f) => !/copia/i.test(f) && f.toLowerCase() !== 'logo.png')
+      .sort((a, b) => a.localeCompare(b))
       .map((filename) => ({
         filename,
         nombre: filename

@@ -8,7 +8,8 @@ import DriveGallery from "@/components/DriveGallery";
 import { PortalLiveSync } from "@/components/PortalLiveSync";
 import { IdleLogout } from "@/components/IdleLogout";
 import { SecureImage } from "@/components/SecureImage";
-import { Zap, FolderKanban, FileText, BarChart3, LifeBuoy, LogOut, X, Maximize2 } from "lucide-react";
+import { FolderKanban, FileText, BarChart3, LifeBuoy, LogOut, X, Maximize2 } from "lucide-react";
+import Isotipo from "@/components/Isotipo";
 
 export function PortalClienteView({
   nombreCliente,
@@ -68,7 +69,7 @@ export function PortalClienteView({
       <aside className="w-full md:w-64 bg-[#0B192C] text-white flex flex-col justify-between shrink-0 sticky top-0 z-30 md:h-screen">
         <div>
           <div className="p-6 border-b border-slate-800 flex items-center gap-3">
-            <div className="bg-red-600 p-2 rounded-lg"><Zap className="w-5 h-5 text-white" /></div>
+            <Isotipo className="h-12 w-auto" />
             <div>
               <span className="font-bold tracking-tight block leading-none">ELECTRO<span className="text-red-500">CARIBE</span></span>
               <span className="text-[10px] text-slate-400 uppercase tracking-wider">Portal Clientes</span>

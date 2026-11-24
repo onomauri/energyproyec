@@ -3,7 +3,8 @@ import { prisma } from "@/lib/prisma";
 import { getClientPhotosByDate } from "@/lib/googleDrive";
 import { loginAdmin, logoutAdmin } from "./actions";
 import { AdminDashboard } from "./AdminDashboard";
-import { Zap, Shield, LogOut } from "lucide-react";
+import { Shield, LogOut } from "lucide-react";
+import Isotipo from "@/components/Isotipo";
 
 export const dynamic = "force-dynamic";
 
@@ -112,9 +113,7 @@ export default async function AdminPage() {
       <header className="bg-[#0B192C] text-white px-6 py-4 border-b border-slate-800">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-red-600 p-2 rounded-lg">
-              <Zap className="w-5 h-5 text-white" />
-            </div>
+            <Isotipo className="h-12 w-auto" />
             <div>
               <span className="font-bold tracking-tight block leading-none">
                 ELECTRO<span className="text-red-500">CARIBE</span> • ADMIN
